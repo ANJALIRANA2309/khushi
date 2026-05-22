@@ -1,0 +1,218 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#050816;
+  color:white;
+}
+
+/* NAVBAR */
+
+header{
+  width:100%;
+  padding:20px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  background:rgba(0,0,0,0.2);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#00e5ff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00e5ff;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:120px 10%;
+}
+
+.hero-text{
+  width:50%;
+}
+
+.hero-text h1{
+  font-size:60px;
+}
+
+.hero-text span{
+  color:#00e5ff;
+}
+
+.hero-text h2{
+  margin-top:15px;
+  color:#8b5cf6;
+}
+
+.hero-text p{
+  margin:20px 0;
+  line-height:1.7;
+}
+
+button{
+  padding:14px 35px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(to right,#00e5ff,#8b5cf6);
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+.hero-image img{
+  width:350px;
+  border-radius:50%;
+  border:5px solid #00e5ff;
+  box-shadow:0 0 40px #00e5ff;
+}
+
+/* ABOUT */
+
+.about,
+.skills,
+.projects,
+.contact{
+  padding:100px 10%;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2{
+  text-align:center;
+  margin-bottom:50px;
+  font-size:40px;
+}
+
+.about-card{
+  background:rgba(255,255,255,0.05);
+  padding:40px;
+  border-radius:20px;
+  backdrop-filter:blur(10px);
+}
+
+/* SKILLS */
+
+.skill-container{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.skill-card{
+  width:220px;
+  padding:40px;
+  text-align:center;
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-10px);
+}
+
+.skill-card i{
+  font-size:50px;
+  margin-bottom:20px;
+  color:#00e5ff;
+}
+
+/* PROJECT */
+
+.project-card{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.project-card img{
+  width:450px;
+  border-radius:20px;
+}
+
+.project-info{
+  flex:1;
+}
+
+/* CONTACT */
+
+form{
+  max-width:700px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+form input,
+form textarea{
+  margin-bottom:20px;
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  background:#111827;
+  color:white;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text{
+    width:100%;
+  }
+
+  .hero-image img{
+    width:250px;
+    margin-top:40px;
+  }
+
+  nav{
+    display:none;
+  }
+}
